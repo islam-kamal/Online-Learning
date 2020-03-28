@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "853969032761",
+    "firebase_url": "https://eduction-50c14.firebaseio.com",
+    "project_id": "eduction-50c14",
+    "storage_bucket": "eduction-50c14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853969032761:android:dc91260fc7ff1584ee9fe8",
+        "android_client_info": {
+          "package_name": "com.islamkamal.edu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853969032761-ourd026u3qff3d1fkrupro6lf7e7c7ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU2TVQFdsHLRWMMZvNE-Aysg2uaH_yn6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853969032761-ourd026u3qff3d1fkrupro6lf7e7c7ug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
