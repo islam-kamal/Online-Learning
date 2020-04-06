@@ -44,6 +44,17 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //to solve app crashed when open on mobile
+
+        multiDexEnabled true
+        ndk {
+            abiFilters 'x86', 'armeabi-v7a'
+        }
+
+
+
+
     }
 
     buildTypes {
@@ -51,6 +62,7 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
+            //minifyEnabled false
         }
     }
 }

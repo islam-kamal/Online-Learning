@@ -9,7 +9,7 @@ import 'package:video_chat/Auth/auth.dart';
 import 'messageui.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'Model/user.dart';
-import 'package:flushbar/flushbar.dart';
+//import 'package:flushbar/flushbar.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'page_navigator.dart';
@@ -245,6 +245,7 @@ class _ChatPageState extends State<ChatPage> with AutomaticKeepAliveClientMixin<
     );
     
   }
+  /*
   //Simple flushbar
   void showSimpleFlushBar(BuildContext context, String message){
     Flushbar(
@@ -254,6 +255,8 @@ class _ChatPageState extends State<ChatPage> with AutomaticKeepAliveClientMixin<
     )..show(context);
     
   }
+
+   */
 
   void refresh(){
     sleep(const Duration(seconds: 1));

@@ -45,14 +45,7 @@ class MyApp extends StatelessWidget {
                 fallbackFile: 'en',
                 basePath: 'assets/i18n',
               )),
-          /*
-          FlutterI18nDelegate(
-            useCountryCode: false,
-            fallbackFile: 'en',
-            path: 'assets/i18n',
-          ),
 
-           */
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,

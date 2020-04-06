@@ -1,9 +1,10 @@
 import 'package:flutter_i18n/flutter_i18n.dart';
+import 'package:video_chat/Auth/personal_info.dart';
 import 'package:video_chat/page_navigator.dart';
 
 import 'package:flutter/material.dart';
 import 'package:video_chat/Auth/auth.dart';
-import 'package:flushbar/flushbar.dart';
+//import 'package:flushbar/flushbar.dart';
 
 // The Sign in and Register Widgets
 
@@ -143,12 +144,12 @@ class _RegisterState extends State<Register> {
                       //Sending them to the main menu of the chat
                       else{
                         Navigator.pop(context);
-                        showSimpleFlushBar(context, FlutterI18n.translate(context, 'app.succesfullyregisteredanaccount'));
+                        //showSimpleFlushBar(context, FlutterI18n.translate(context, 'app.succesfullyregisteredanaccount'));
                         // experimental:
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => PageNavigator(),
+                            builder: (context) => Personal_Info(),
                           ),
                         );
                       }
@@ -170,6 +171,7 @@ class _RegisterState extends State<Register> {
       ),
     );
   }
+  /*
   //Simple flushbar
   void showSimpleFlushBar(BuildContext context, String message){
     Flushbar(
@@ -178,5 +180,7 @@ class _RegisterState extends State<Register> {
       backgroundColor: Colors.green,
     )..show(context);
   }
+
+   */
   
 }

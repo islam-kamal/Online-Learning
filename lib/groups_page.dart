@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:video_chat/page_navigator.dart';
 import 'package:video_chat/GeoLocation/geolocation.dart';
-import 'package:flushbar/flushbar.dart';
+//import 'package:flushbar/flushbar.dart';
 import 'package:video_chat/charts.dart';
 import 'Auth/auth.dart';
 import 'GeoLocation/maps.dart';
@@ -161,7 +161,7 @@ class _GroupsPageState extends State<GroupsPage> with AutomaticKeepAliveClientMi
                 leading: Icon(Icons.person, color: Colors.black,),
                 title: Text(FlutterI18n.translate(context, 'app.logout'), style: TextStyle(color: Colors.black)),
                 onTap: () async{
-                  showSimpleFlushBar(context, FlutterI18n.translate(context, 'app.successfullysignedout'));
+                 // showSimpleFlushBar(context, FlutterI18n.translate(context, 'app.successfullysignedout'));
                   await _auth.signOut();
                 },
               ),
@@ -176,7 +176,7 @@ class _GroupsPageState extends State<GroupsPage> with AutomaticKeepAliveClientMi
     return snapshot.data.documents.map<Widget>((document){
       return ListTile(
         onTap: () {
-          showSimpleFlushBar(context, 'Selected ${document["groupName"]}');
+          //showSimpleFlushBar(context, 'Selected ${document["groupName"]}');
           print('onTap, setting selectedGroupID to ${document["groupName"]}');
           widget.pageNavigatorState.selectedGroupID = document.documentID;
           widget.pageNavigatorState.selectedGroupName = document.data['groupName'];
@@ -211,16 +211,18 @@ class _GroupsPageState extends State<GroupsPage> with AutomaticKeepAliveClientMi
             ),
           ],
         ),
-        subtitle: Row(
-          children: <Widget>[
-            Text((document['lastUser'] != null ? document['lastUser'] : " " )+ ": "),
-            Text((document['lastMessage'] != null? document['lastMessage'] : " ")),
-          ],
-        )
+        subtitle:   Row(
+            children: <Widget>[
+              Text((document['lastUser'] != null ? document['lastUser'] : " " )+ ": "),
+              Text((document['lastMessage'] != null? document['lastMessage'] : " ")),
+            ],
+          ),
+
+
       );
     }).toList();
   }
-
+/*
   //Simple flushbar
   void showSimpleFlushBar(BuildContext context, String message){
     Flushbar(
@@ -228,5 +230,7 @@ class _GroupsPageState extends State<GroupsPage> with AutomaticKeepAliveClientMi
       duration: Duration(seconds: 3),
     )..show(context);
   }
+
+ */
 }
 

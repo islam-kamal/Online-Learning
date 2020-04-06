@@ -24,28 +24,24 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-
+  image_picker:
   #Firebase packages
   #firebase_core:
-  firebase_auth: #^0.14.0+5
+  firebase_auth:
   #cloud_firestore:
-  cloud_firestore: #^0.12.9+4
-  provider: #^3.1.0
+  firebase_storage:
+  cloud_firestore:
+  provider:
 
   #GeoLocation
-  geolocator: #^5.1.5
-  latlong: #^0.6.1
-  flutter_map: #^0.7.3
+  geolocator:
+  latlong:
+  flutter_map:
 
   #Agora permissions
-  agora_rtc_engine: #1.0.1
-  permission_handler: #^3.0.0
+  agora_rtc_engine:
+  permission_handler:
 
-  #Asthetics 
-  flushbar:
-  charts_flutter:
-  font_awesome_flutter:
-  flutter_launcher_icons:
 
   #Sqlfite
   sqflite:
@@ -54,7 +50,7 @@ dependencies:
   flutter_i18n:
   
   date_format: ^1.0.8
-  
+
 
   #Notification
   flutter_local_notifications:
